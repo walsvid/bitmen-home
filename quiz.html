@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Bitman</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        li, p {
+            font-size: 1.1em;
+            margin: 12px;
+        }
+
+        #content {
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/markdown" id="markdown-content">
+## 写在前面的话
+`Bitman`呢，并不是工作室，也不是社团，这里是更能自由提升你能力的一片沃土。所以，我们不是以事情的结果和完成的快慢来评定想要加入的你，更多考虑的是学习时的态度和解决问题的思考方式。所以，请记住要**独立**地完成这些题目，也许会遇到很多问题，会踩很多的坑，但是这些弯路不是白走的。它会成为你宝贵的财富。
+
+我们最后评判的时候，不仅仅会看结果，更多会问解决问题的思路。
+
+这些题目当然不是全部，这只是入门的第一级台阶，后面还有更广阔的天地等着你。觉得简单的同学请不要沾沾自喜，来和我们沟通，提前试试更有难度的题目；觉得困难的同学也没必要灰心，一步一步来。
+
+好了，不多废话，开始试试身手吧：
+
+problem 1
+
+    content
+
+problem 2
+
+    content
+
+## 结束？开始！
+如果你已经完成了其中的大多数题目，首先要祝贺你，你的实力和态度都值得肯定。
+
+####那接下来呢？
+
+接下来可以联系之前页面中提到的学长，对你的解答进行一个评估。是的，挑战还没有结束，请你不要在意自己是不是贴上加入某个组织的标签，而是关注学习的过程。
+
+我们相信，不论最后你是否留下了，这个试炼的过程都对你有极大的帮助。
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+    <nav id="nav-bar" class="navbar navbar-default navbar-fixed-top" style="background: black">
+        <div class="container">
+            <h1 style="color: white; display: inline-block; padding-bottom: 12px; padding-left: 80px;">
+                <a href="index.html" style="text-decoration: none; color: white;">Bitman</a>
+            </h1>
+        </div>
+    </nav>
+
+    <div style="clear: both; margin-top: 120px;"></div>
+
+    <div id="title-div">
+        <h1 style="margin-bottom: 40px; text-align: center;">拔尖人才工程组招新题目</h1>
+    </div>
+
+    <div id="content">
+    </div>
+
+    <div>
+        <h5 style="text-align: center; margin-bottom: 50px;">
+            <a href="index.html">@Bitman</a>
+        </h5>
+    </div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/markdown.js"></script>
+<script type="text/javascript">
+    $('#content').html(markdown.toHTML($('#markdown-content').html()));
+    var nav = $('#nav-bar');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= nav.height() / 2) {
+            nav.fadeOut();
+        } else if ($(window).scrollTop() < nav.height()) {
+            nav.fadeIn();
+        }
+    });
+</script>
+</body>
+</html>
