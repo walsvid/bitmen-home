@@ -14,12 +14,15 @@
             margin: 12px;
         }
 
-        #content {
+        #content1, #content2, .important {
             width: 70%;
             margin: 0 auto;
         }
+        .important{
+            color: red;
+        }
     </style>
-    <script type="text/markdown" id="markdown-content">
+    <script type="text/markdown" id="markdown-content1">
 ## 写在前面的话
 `Bitman`呢，并不是工作室，也不是社团，这里是更能自由提升你能力的一片沃土。所以，我们不是以事情的结果和完成的快慢来评定想要加入的你，更多考虑的是学习时的态度和解决问题的思考方式。所以，请记住要**独立**地完成这些题目，也许会遇到很多问题，会踩很多的坑，但是这些弯路不是白走的。它会成为你宝贵的财富。
 
@@ -28,7 +31,8 @@
 这些题目当然不是全部，这只是入门的第一级台阶，后面还有更广阔的天地等着你。觉得简单的同学请不要沾沾自喜，来和我们沟通，提前试试更有难度的题目；觉得困难的同学也没必要灰心，一步一步来。
 
 下面的一些题目中可能某些小题你无法给出满意的解答（标*为选做），没关系，请大胆尝试。
-
+    </script>
+    <script type="text/markdown" id="markdown-content2">
 好了，不多废话，开始试试身手吧：
 
 ### Problem 0（给从零开始的"小白"）
@@ -230,7 +234,14 @@
         <h1 style="margin-bottom: 40px; text-align: center;">拔尖人才工程组招新题目</h1>
     </div>
 
-    <div id="content">
+    <div id="content1">
+    </div>
+    <div class="important">
+        <p>注意：</p>
+        <p>关于做题顺序，推荐的方式是先完成大题的第一小问或者前几个小问，而不必要在第一题的最后几小问和标有*的问题上浪费太多的时间。</p>
+        <p>关于截止时间，原则上没有截止时间，但是最好是在下学期开始前完成基本的题目，而且不是说全做完才叫完成，做完一部分就可以来和我们聊聊了。</p>
+    </div>
+    <div id="content2">
     </div>
 
     <div>
@@ -247,7 +258,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/markdown.js"></script>
 <script type="text/javascript">
-    $('#content').html(markdown.toHTML($('#markdown-content').html()));
+    $('#content1').html(markdown.toHTML($('#markdown-content1').html()));
+    $('#content2').html(markdown.toHTML($('#markdown-content2').html()));
     var nav = $('#nav-bar');
     $(window).scroll(function () {
         if ($(window).scrollTop() >= nav.height() / 2) {
